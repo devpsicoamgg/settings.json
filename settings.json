@@ -1,0 +1,97 @@
+{
+  // Configuración del tema y apariencia
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "oneDarkPro.vivid": true,
+  "editor.fontFamily": "Cascadia Code",
+  "workbench.productIconTheme": "fluent-icons",
+  "oneDarkPro.bold": true,
+
+  // Configuración de la terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Configuración del resaltado de sintaxis personalizado
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "punctuation.section.brackets.begin",
+          "punctuation.section.brackets.end",
+          "punctuation.section.array.begin",
+          "punctuation.section.array.end",
+          "punctuation.section.parameters.begin",
+          "punctuation.section.parameters.end",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "keyword.operator.comparison.strict",
+        "settings": {
+          "foreground": "#0000FF",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+  // Otras configuraciones del editor
+  "editor.guides.bracketPairs": true,
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabSize": 2,
+
+  // Configuraciones específicas para lenguajes
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.updateImportsOnFileMove.enabled": "always"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.updateImportsOnFileMove.enabled": "always"
+  },
+
+  // Configuraciones adicionales
+  "symbols.hidesExplorerArrows": false,
+  "editor.minimap.enabled": true,
+  "workbench.colorCustomizations": {},
+  "workbench.statusBar.visible": true,
+  "git.autofetch": true,
+
+  // Ajuste para habilitar el formateo automático con Prettier al guardar
+  "editor.formatOnSave": true,
+  "window.zoomLevel": -1,
+  "workbench.iconTheme": "symbols",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en,es,es-ES,lorem,en-US,en-GB",
+  "cSpell.userWords": [
+    "Pseudoclase",
+    "pseudoclases",
+    "pseudoelemento",
+    "pseudoelementos",
+    "Pseudoelementos"
+  ],
+  "editor.accessibilitySupport": "on",
+  "files.autoSave": "afterDelay",
+
+  // Configuración para Emmet
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": true
+    }
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "jsx-sublime-babel-tags": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true
+}
